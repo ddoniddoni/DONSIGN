@@ -1,0 +1,85 @@
+.profiles {
+  background-color: #ffffff;
+  width: 380px;
+  height: 53%;
+  position: relative;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.profiles__top {
+  width: 100%;
+  height: 200px;
+}
+
+.profiles__top .profile-bg {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profiles__status .profile-image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: 36%;
+  left: 38.5%;
+  border: 6px solid white;
+}
+
+.profiles__status {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profiles__status .status-name {
+  margin-top: -50px;
+  font-size: 25px;
+}
+
+.profiles__status .status-job {
+  margin-top: 10px;
+  font-size: 15px;
+  color: grey;
+}
+
+.profiles__status .profiles__btn {
+  width: 500px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profiles__btn .btn__follow {
+  color: #f7f7f7;
+  background-color: #9c90f7;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-left: 80px;
+}
+
+.profiles__btn .btn__message {
+  color: #9290f7d0;
+  background-color: #d6d5f3;
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  margin-right: 80px;
+}

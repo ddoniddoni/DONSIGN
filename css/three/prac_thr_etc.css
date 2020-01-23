@@ -1,0 +1,21 @@
+.etc {
+  margin-top: 60px;
+}
+.etc__account .etc__account-text1,
+.etc__forgot .etc__forgot-text1 {
+  font-size: 11px;
+  color: #cdcccc;
+  padding-left: 30px;
+  font-weight: 700;
+}
+
+.etc__account .etc__account-text2,
+.etc__forgot .etc__forgot-text2 {
+  font-size: 12px;
+  color: #eb808c;
+  font-weight: 700;
+  cursor: pointer;
+}
+.etc__forgot {
+  margin-top: 10px;
+}
