@@ -1,21 +1,16 @@
-const colorWrapper = document.querySelector(".color__wrapper");
-const colorChars = "0123456789ABCDEF";
-const chars_length = 6;
+import express from "express";
+import router from "./router/main";
+const app = express();
+const PORT = 5000;
 
-const randomColor = () => {
-  for (let i = 0; i <= 104; i++) {
-    let colorArray = "";
+function handleListening() {
+  console.log(`Listening on: http://localhost:${PORT}`);
+}
 
-    for (let j = 0; j < chars_length; j++) {
-      let randomNum = Math.floor(Math.random() * 16);
-      colorArray += colorChars.substring(randomNum, randomNum + 1);
-    }
-    const colorImg = document.createElement("button");
-    colorImg.classList = "color-card";
-    colorImg.style.backgroundColor = `#${colorArray}`;
-    colorImg.textContent = `color:#${colorArray}`;
-    colorWrapper.append(colorImg);
-  }
-};
+function handleHome(req, res) {
+  res.send("hello");
+}
 
-randomColor();
+app.get("/", handleHome);
+
+app.listen(PORT, handleListening);
