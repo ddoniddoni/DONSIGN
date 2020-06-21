@@ -1,15 +1,10 @@
 {
   "name": "donsign",
   "version": "1.0.0",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
   "description": "MyDesign",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon --exec babel-node index.js"
   },
   "repository": {
     "type": "git",
